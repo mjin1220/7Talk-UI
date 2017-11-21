@@ -19,15 +19,16 @@ body {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.main_container img {
-  margin-top: 30%;
+.main_container #logo {
+  margin: auto;
+  width: 80%;
 }
 
 .login_form {
   margin-top: 10%;
 }
 
-.login_form input {
+.login_form .textfield {
   margin-top: 3%;
   border-radius: 4px;
   border-width: 2px;
@@ -38,7 +39,7 @@ body {
   padding-left: 15px;
 }
 
-.login_form input:focus {
+.login_form .textfield:focus {
   border: 2px solid #f5b7f0;
   border-radius: 0px;
 }
@@ -47,7 +48,7 @@ body {
   margin-top: 10%;
 }
 
-.login_form .button_group button{
+.button_group input{
   border-radius: 6px;
   border:none;
   background-color: rgb(94, 94, 94);
@@ -56,9 +57,22 @@ body {
   text-align: center;
   width: 100px;
   height: 40px;
-  margin: auto 5% auto 5%; 
+  margin: auto 5% auto 5%;
+  padding: 0px;
 }
 
-.login_form .button_group button:hover{
+.button_group input:hover, #not_agree:hover{
   background-color: rgb(165, 162, 162);
+}
+
+.terms_contents{  
+  width: 90%;
+  height: 380px;
+  background: white;
+  margin: 3% auto 5% auto;
+}
+
+#not_agree{
+  background: rgb(224, 224, 224);
+  color: rgb(64, 64, 64);
 }
