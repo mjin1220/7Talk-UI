@@ -17,7 +17,7 @@
 
       </div>
       <div class="button_group">
-        <input type='button' id='not_agree' form="terms_form" onclick="javascript:alert('초기화면으로 돌아갑니다.'); history.back()" value='비동의'>
+        <input type='button' id='not_agree' form="terms_form" onclick="javascript:alert('초기화면으로 돌아갑니다.'); window.location.href = window.location.origin;" value='비동의'>
         <input type='submit' form="login_form" value='동의'>
       </div>
     </form>
