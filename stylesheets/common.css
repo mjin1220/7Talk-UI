@@ -76,3 +76,7 @@ body {
   background: rgb(224, 224, 224);
   color: rgb(64, 64, 64);
 }
+
+footer p{
+  color: rgb(127, 127, 127);
+}
