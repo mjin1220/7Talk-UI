@@ -1,10 +1,12 @@
-*:focus{
-  outline: none;  
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700);
+*:focus {
+  outline: none;
 }
 
 body {
-  font-family: Arial,sans-serif;
-  background: white;
+  font-family: ‘Roboto’, ‘Spoqa Han Sans’, ‘Spoqa Han Sans JP’, ‘Sans-serif’;
+  background: black;
 }
 
 .main_container {
@@ -35,7 +37,7 @@ body {
   border-style: solid;
   border-color: #ddd;
   height: 50px;
-  width: 300px;
+  width: 85%;
   padding-left: 15px;
 }
 
@@ -48,9 +50,9 @@ body {
   margin-top: 10%;
 }
 
-.button_group input{
+.button_group input {
   border-radius: 6px;
-  border:none;
+  border: none;
   background-color: rgb(94, 94, 94);
   font-size: 16px;
   color: rgb(255, 255, 255);
@@ -61,22 +63,60 @@ body {
   padding: 0px;
 }
 
-.button_group input:hover, #not_agree:hover{
+.button_group input:hover,
+#not_agree:hover {
   background-color: rgb(165, 162, 162);
 }
 
-.terms_contents{  
+.terms_form {
   width: 90%;
-  height: 380px;
-  background: white;
+  height: 73%;
   margin: 3% auto 5% auto;
 }
 
-#not_agree{
+.terms_contents {
+  width: 100%;
+  height: 92%;
+  background: white;
+  margin-bottom: 3%;
+}
+
+.terms_contents table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+.terms_contents table tr td p,
+.terms_contents table tr th p {
+  margin: 0;
+  padding-left: 3%;
+  text-align: left;  
+}
+
+.terms_contents table tr td,
+.terms_contents table tr th {
+  padding: 3%;
+}
+
+#not_agree {
   background: rgb(224, 224, 224);
   color: rgb(64, 64, 64);
 }
 
-footer p{
+footer {
+  margin: auto;
+  /*margin-top: 5%;*/
+  font-size: x-small;
   color: rgb(127, 127, 127);
+}
+
+td textarea {
+  width: 95%;
+  height:100%;
+  resize: none;
+  background-color: rgb(224, 224, 224);
+  border: none;
+  overflow-y: scroll;
+  font-size:10px;
 }
