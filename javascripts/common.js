@@ -12,8 +12,8 @@ var all_agree_changed = function(){
     }
 };
 
-var sub_agree_changed = function(this){
-    if(this.checked == true){
+var sub_agree_changed = function(cb){
+    if(cb.checked == true){
         return;
     } else {
         if(document.getElementsByClassName('all_agree')[0].checked == true){
