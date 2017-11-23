@@ -31,3 +31,13 @@ var sub_agree_changed = function(cb){
         }
     }
 };
+
+var agree_action = function(){
+    var all_checked = document.getElementsByClassName('all_agree')[0].checked;
+    if(all_ckecked == false){
+        alert('모든 약관에 동의해야만 가입이 가능합니다.');
+    } else {
+        location.href = 'sign_up_kakao.html';
+    }
+    return;
+};

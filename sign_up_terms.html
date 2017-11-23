@@ -204,7 +204,7 @@
       <div class="button_group">
         <input type='button' id='not_agree' form="terms_form" onclick="javascript:alert('초기화면으로 돌아갑니다.'); window.location.href = window.location.origin;"
           value='비동의'>
-        <input type='submit' form="login_form" value='동의'>
+        <input type='button' form="login_form" onclick="agree_action();" value='동의'>
       </div>
     </form>
     <footer>
