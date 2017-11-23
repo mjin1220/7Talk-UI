@@ -3,60 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="stylesheets/common.css">
-  <title>7-Talk</title>
-</head>
-
+  <meta name="viewqk
 <body>
   <div class='main_container'>
     <img src="images/7-talk_logo.png" alt="7-talk_logo.png" style='margin-top:10%;' id='logo'>
     <form class='terms_form' id='terms_form'>
       <div class='terms_contents'>
         <table>
-          <tr style="height:15%;">
-            <th style="width: 85%; font-size:13px; border-bottom: 1px solid black;">
-              <p>이용약관, 개인정보 수집 및 이용에
-                <br>모두 동의합니다.</p>
-            </th>
-            <td style="border-bottom: 1px solid black;">
-              <input type="checkbox" value="all_agree" class="all_agree" onclick="all_agree_changed();">
-            </td>
-          </tr>
-          <tr style="height:8%;">
-            <th>
-              <p style="width: 85%; font-size:13px;">7-Talk 이용약관 동의</p>
-            </th>
-            <td>
-              <input type="checkbox" value="sub_agree" class="sub_agree" onclick="sub_agree_changed(this);">
-            </td>
-          </tr>
-          <tr style="height:32.5%;">
-            <td colspan="2">
-              
-            </td>
-          </tr>
-          <tr style="height:8%;">
-            <th>
-              <p style="width: 85%; font-size:13px;">
-                개인정보 수집 및 이용에 대한 안내</p>
-            </th>
-            <td>
-              <input type="checkbox" value="sub_agree" class="sub_agree" onclick="sub_agree_changed(this);">
-            </td>
-          </tr>
-          <tr style="height:32.5%;">
-            <td colspan="2">
-            
-            </td>
+          <tr>
+              <td></td>
           </tr>
         </table>
       </div>
       <div class="button_group">
-        <input type='button' id='not_agree' form="terms_form" onclick="javascript:alert('초기화면으로 돌아갑니다.'); window.location.href = window.location.origin;"
-          value='비동의'>
-        <input type='submit' form="login_form" value='동의'>
+        <input type='button' id='btn_kakao'value='카카오계정으로 인증'>
       </div>
     </form>
     <footer>
