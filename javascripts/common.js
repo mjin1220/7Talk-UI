@@ -14,10 +14,20 @@ var all_agree_changed = function(){
 
 var sub_agree_changed = function(cb){
     if(cb.checked == true){
-        return;
+        var sub_agrees = document.getElementsByClassName('sub_agree');
+        var checked_count = 0;
+        for( var i = 0 ; i < sub_agrees.length ; i++){
+            if(sub_agrees[i].checked == true){
+                checked_count++;
+            }
+        }
+        if( checked_count == sub_agrees.length){
+            all_cb.checked = true;
+        }
     } else {
-        if(document.getElementsByClassName('all_agree')[0].checked == true){
-            document.getElementsByClassName('all_agree')[0].checked == false;
+        var all_cb = document.getElementsByClassName('all_agree')[0];
+        if(all_cb.checked == true){
+            all_cb.checked = false;
         }
     }
 };
