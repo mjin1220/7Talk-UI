@@ -22,7 +22,7 @@ var sub_agree_changed = function(cb){
             }
         }
         if( checked_count == sub_agrees.length){
-            all_cb.checked = true;
+            document.getElementsByClassName('all_agree')[0].checked = true;
         }
     } else {
         var all_cb = document.getElementsByClassName('all_agree')[0];
