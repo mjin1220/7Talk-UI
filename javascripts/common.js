@@ -11,3 +11,13 @@ var all_agree_changed = function(){
         sub_agrees[i].checked = cb_status;
     }
 };
+
+var sub_agree_changed = function(this){
+    if(this.checked == true){
+        return;
+    } else {
+        if(document.getElementsByClassName('all_agree')[0].checked == true){
+            document.getElementsByClassName('all_agree')[0].checked == false;
+        }
+    }
+};
