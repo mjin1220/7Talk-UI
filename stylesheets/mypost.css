@@ -1,0 +1,48 @@
+.maching-page {
+    width: 360px;
+    height: 600px;
+    background: #f2e7f1;
+    
+    margin: auto;
+  }
+
+
+  .form .menu-form {
+    width: 360px;
+    height: 100px;
+    background: #f5b7f0;
+    
+
+  }
+  .form #myInfo
+  {
+    
+    width: 70px;
+    margin-left: 40px;
+    
+  }
+  .form #heart
+  {
+    width: 70px;
+    margin-left: 40px;
+    
+  }
+  .form #post
+  {
+    width: 70px;
+    margin-left: 40px;
+    margin-right: 20px;
+    
+  }
+  
+  .form img
+  {
+    
+    float: left;
+    
+    margin-top: 15px;
+    
+  }
+  
+  
+  
