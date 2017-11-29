@@ -12,16 +12,83 @@
 <body>
     <div class='main_container'>
         <img src="images/7-talk_logo.png" alt="7-talk_logo.png" style='margin-top:10%;' id='logo'>
-        <form class='terms_form' id='terms_form'>
-            <div class='terms_contents'>
+        <div class="top_group">
+            <input type="button" value="< prev" onclick="window.history.back();">
+            <span style="margin:0;">사용자 정보 입력</span>
+            <input type="button" value="next >" onclick="alert('카카오ID 인증을 해주세요.');">
+        </div>
+        <form class='info_form' id='info_form'>
+            <div class='info_contents'>
                 <table>
                     <tr>
-                        <td></td>
+                        <td>
+                            <input type="text" class='textfield' placeholder="아이디" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class='textfield' placeholder="비밀번호" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class='textfield' placeholder="비밀번호 재확인" required>
+                        </td>
+                    </tr>
+                </table>
+                <table style="margin-top:35px;">
+                    <tr style="width:100%;">
+                        <td colspan="10">
+                            <input type="text" class='textfield' placeholder="이름" required>
+                        </td>
+                    </tr>
+                    <tr style="width:100%;">
+                        <div class='select_sex'>
+                            <td colspan="5">
+                                <input type="button" value="남성" class='btn_sex' style="  width: 95%;">
+                            </td>
+                            <td colspan="5">
+                                <input type="button" value="여성" class='btn_sex' style="  width: 95%;">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr style="width:100%;">
+                        <td style="width:10%">
+                            <span style="font-size:12px;">생일</span>
+                        </td>
+                        <td colspan="3" style="width:30%">
+                            <input type="text" class='textfield' placeholder="년(4자)" required style="width:80%;">
+                        </td>
+                        <td colspan="3" style="width:30%">
+                            <select style="width:80%; height: 40px;">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td colspan="3" style="width:30%">
+                            <input type="text" class='textfield' placeholder="일" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10">
+                            <input type="email" class='textfield' name="email" placeholder="본인확인 이메일 (선택)">
+                        </td>
                     </tr>
                 </table>
             </div>
             <div class="button_group">
-                <input type='button' id='btn_kakao' onclick="javascript:alert('여기까지 개발!\n초기화면으로 돌아갑니다.'); window.location.href = window.location.origin;" value='카카오계정으로 인증'>
+                <input type='button' id='btn_kakao' onclick="javascript:alert('여기까지 개발!\n초기화면으로 돌아갑니다.'); window.location.href = window.location.origin;"
+                    value='카카오계정으로 인증'>
             </div>
         </form>
         <footer>

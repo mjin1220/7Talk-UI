@@ -89,7 +89,7 @@ body {
 .terms_contents table tr th p {
   margin: 0;
   padding-left: 3%;
-  text-align: left;  
+  text-align: left;
 }
 
 .terms_contents table tr td,
@@ -104,31 +104,93 @@ body {
 
 footer {
   margin: auto;
-  /*margin-top: 5%;*/
   font-size: x-small;
   color: rgb(127, 127, 127);
 }
 
 td textarea {
   width: 95%;
-  height:100%;
+  height: 100%;
   resize: none;
   background-color: rgb(224, 224, 224);
   border: none;
   overflow-y: scroll;
-  font-size:10px;
+  font-size: 10px;
 }
 
-#btn_kakao{
-  width: 324px;
+#btn_kakao {
+  width: 95%;
   height: 40px;
   border-radius: 6px;
   border: none;
-  background-color: rgb(255,222,0);
+  background-color: rgb(255, 222, 0);
   font-size: 16px;
-  color: rgb(60,30,0);
+  color: rgb(60, 30, 0);
   text-align: center;
   padding: 0px;
   margin: auto;
   font-weight: 900;
+}
+
+.info_form {
+  width: 90%;
+  height: 63%;
+  margin: 3% auto 13% auto;
+}
+
+.info_contents {
+  width: 100%;
+  height: 97%;
+  margin-bottom: 3%;
+}
+
+.top_group {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(94, 94, 94);
+  font-family: HanSans;
+}
+
+.top_group input {
+  border-radius: 25px;
+  border: none;
+  background-color: rgb(230, 230, 230);
+  font-size: 14px;
+  color: rgb(131, 131, 131);
+  text-align: center;
+  width: 70px;
+  height: 30px;
+  margin: auto 2% auto 2%;
+  padding: 0px;
+}
+
+.top_group input:hover {
+  background-color: rgb(165, 162, 162);
+}
+
+.info_form .textfield:focus {
+  border: 0.5px solid #f5b7f0;
+  border-radius: 0px;
+}
+
+.info_contents table {
+  border-collapse: collapse;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.info_contents table input {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #ddd;
+  width: 93%;
+  height: 40px;
+  padding-left: 15px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.btn_sex {
+  width: 95%;
+  padding:0;
 }
