@@ -13,6 +13,7 @@ function next(){
     if(div.getElementsByClassName('selected_interest').length>=5)
     {
         alert(a);
+        
         if(a=='sign_up_interest.html')
         {
             location.href='sign_up_interest2.html';
