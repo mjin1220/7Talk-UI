@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +8,47 @@
     <link rel="stylesheet" href="stylesheets/mypage.css">
     <title>mypage</title>
 </head>
+
 <body>
     <div class="maching-page">
-        <div class="form">
-            <form class="menu-form">
-                <a href="mypage.html"><img id="myInfo" src="icons/004-user.png" alt="my_info_icon">
-                </a>
-                <a href="main.html"><img id="heart" src="icons/003-heart-1.png" alt="maching_icon">
-                </a>
-                <a href="post.html"><img id="post" src="icons/001-post-it.png" alt="post_icon">
-                </a>
+        <nav class='top_menu'>
+            <ul>
+                <li>
+                    <a href="mypage.html" class='notunder'>
+                        <img id="myInfo" src="icons/004-user.png" alt="my_info_icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="main.html" class='notunder'>
+                        <img id="heart" src="icons/003-heart-1.png" alt="maching_icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="post.html" class='notunder'>
+                        <img id="post" src="icons/001-post-it.png" alt="post_icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class='submenu'>
+            <a href="myheart.html" class='notunder submenu'>
+                <img id="s_myheart" src="icons/002-big-heart.png" alt="myheart_icon">
 
-            </form>
-           
-        
-            <form class="myheart-form">
-                
-                <a href="myheart.html"><img id="s_myheart" src="icons/002-big-heart.png" alt="myheart_icon">
-                </a>
-                <p class="message-myheart">MyHeart</p>
-            </form>
-            <form class="myinfo-form">
-                
-                <a href="myinfo.html"><img id="s_myinfo" src="icons/myinfo.png" alt="myinfo_icon">
-                </a>
-                <p class="message-myinfo">Myinfo</p>
-            </form>
-            <form class="mypost-form">
-                <a href="mypost.html"><img id="s_mypost" src="icons/mypost.png" alt="mypost_icon">
-                
-                </a>
+                <p class="message-myheart notunder">MyHeart</p>
+            </a>
+            <a href="myinfo.html" class='notunder submenu'>
+                <img id="s_myinfo" src="icons/myinfo.png" alt="myinfo_icon">
+
+                <p class="message-myinfo notunder">Myinfo</p>
+            </a>
+            <a href="mypost.html" class='notunder submenu'>
+                <img id="s_mypost" src="icons/mypost.png" alt="mypost_icon">
                 <p class="message-mypost">MyPost</p>
-            </form>
+            </a>
         </div>
     </div>
-    
+    </div>
+
 </body>
+
 </html>

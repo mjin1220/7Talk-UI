@@ -1,16 +1,23 @@
+body {
+  font-family: Arial, ‘Sans-serif’;
+  background: black;
+}
+
 .maching-page {
     width: 360px;
     height: 600px;
     background: #f2e7f1;
     
     margin: auto;
+    margin-top: 4%;
+    
   }
 
 
   .form .menu-form {
     width: 360px;
     height: 100px;
-    background: #f5b7f0;
+    background: #6f00ff;
     
 
   }
