@@ -12,8 +12,20 @@ function next(){
     var a = location.href;
     if(div.getElementsByClassName('selected_interest').length>=5)
     {
-        if(a==sign_up_interest2.html)
+        alert(a);
+        if(a=='sign_up_interest.html')
+        {
+            location.href='sign_up_interest2.html';
+        }
+        else if(a=='sign_up_interest2.html')
+        {
             location.href='sign_up_interest3.html';
+        }
+        else if(a=='sign_up_interest3.html')
+        {
+            location.href='sign_up_interest4.html';
+        }
+        
     }
     else
     {

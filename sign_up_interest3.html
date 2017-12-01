@@ -15,39 +15,49 @@
         <div class="top_group">
             <input type="button" value="< prev" onclick="window.history.back();">
             <span style="margin:0;">관심사 - 생활</span>
-            <input type="button" value="next >" onclick="location.href='sign_up_interest2.html'">
+            <input type="button" value="next >" onclick="location.href='sign_up_interest4.html';">
         </div>
         <div class="interest-form">
-            <p class="interest_type">직업</p>
-            <input type="button" value="회사원" class='btn_interest' style="  width: 40px; padding:0;" onclick="background-color: rgb(224, 186, 186);">
-            <input type="button" value="학생" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="CEO" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="공무원" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="기타" class='btn_interest' style="  width: 40px; padding:0;">
-            <p class="interest_type">평소 귀가시간</p>
-            <input type="button" value="저녁 전" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="10시 전" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="자정 전" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="새벽" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="불규칙" class='btn_interest' style="  width: 40px; padding:0;">
-            <p class="interest_type">한 달 독서량</p>
-            <input type="button" value="0~1" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="2~3" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="4~5" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="6~7" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="8~" class='btn_interest' style="  width: 40px; padding:0;">
-            <p class="interest_type">좋아하는 영화 장르</p>
-            <input type="button" value="액션" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="멜로" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="스릴러" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="공포" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="드라마" class='btn_interest' style="  width: 40px; padding:0;">
-            <p class="interest_type">주량</p>
-            <input type="button" value="안함" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="반병" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="한병" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="두병" class='btn_interest' style="  width: 40px; padding:0;">
-            <input type="button" value="무한" class='btn_interest' style="  width: 40px; padding:0;">
+            <div id='job'>
+                <p class="interest_type">직업</p>
+                <input type="button" value="회사원" class='btn_interest' style="  width: 40px; padding:0;"  onclick="changeSelect(this);">
+                <input type="button" value="학생" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="CEO" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="공무원" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="기타" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+            </div>
+            <div id='homecomingTime'>
+                <p class="interest_type">평소 귀가시간</p>
+                <input type="button" value="저녁 전" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="10시 전" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="자정 전" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="새벽" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="불규칙" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+            </div>
+            <div id='readBook'>
+                <p class="interest_type">한 달 독서량</p>
+                <input type="button" value="0~1" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="2~3" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="4~5" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="6~7" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="8~" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+            </div>
+            <div id='movieGenre'>
+                <p class="interest_type">좋아하는 영화 장르</p>
+                <input type="button" value="액션" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="멜로" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="스릴러" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="공포" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="드라마" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+            </div>
+            <div id='liquor'>
+                <p class="interest_type">주량</p>
+                <input type="button" value="안함" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="반병" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="한병" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="두병" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+                <input type="button" value="무한" class='btn_interest' style="  width: 40px; padding:0;" onclick="changeSelect(this);">
+            </div>
             
             
             
@@ -57,7 +67,7 @@
             <p> &#169; Junk Food</p>
         </footer>
     </div>
-    <script src="javascripts/common.js"></script>
+    <script src="javascripts/interest.js"></script>
 </body>
 
 </html>
