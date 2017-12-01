@@ -22,45 +22,45 @@
                 <table>
                     <tr>
                         <td>
-                            <input type="text" class='textfield' placeholder="아이디" required>
+                            <input type="text" class='textfield' placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;아이디" required autocomplete="none">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" class='textfield' placeholder="비밀번호" required>
+                            <input type="password" class='textfield' placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호" required autocomplete="none">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" class='textfield' placeholder="비밀번호 재확인" required>
+                            <input type="password" class='textfield' placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호 재확인" required autocomplete="none">
                         </td>
                     </tr>
                 </table>
                 <table style="margin-top:35px;">
-                    <tr style="width:100%;">
+                    <tr>
                         <td colspan="10">
-                            <input type="text" class='textfield' placeholder="이름" required>
+                            <input type="text" class='textfield' placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이름" required autocomplete="none">
                         </td>
                     </tr>
-                    <tr style="width:100%;">
+                    <tr>
                         <div class='select_sex'>
                             <td colspan="5">
-                                <input type="button" value="남성" class='btn_sex' style="  width: 95%; padding:0;">
+                                <input type="button" value="남성" class='btn_sex'>
                             </td>
                             <td colspan="5">
-                                <input type="button" value="여성" class='btn_sex' style="  width: 95%; padding:0;">
+                                <input type="button" value="여성" class='btn_sex'>
                             </td>
                         </div>
                     </tr>
-                    <tr style="width:100%;">
-                        <td style="width:10%">
-                            <span style="font-size:12px;">생일</span>
+                    <tr>
+                        <td colspan="1">
+                            <span style="font-size:12px; background-color=gray;">생일</span>
                         </td>
-                        <td colspan="3" style="width:30%">
-                            <input type="text" class='textfield' placeholder="년(4자)" required style="width:80%;">
+                        <td colspan="3">
+                            <input type="text" class='textfield' placeholder="년(4자)" required>
                         </td>
-                        <td colspan="3" style="width:30%">
-                            <select style="width:80%; height: 40px;">
+                        <td colspan="3">
+                            <select id='date_select'>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -75,13 +75,13 @@
                                 <option value="12">12</option>
                             </select>
                         </td>
-                        <td colspan="3" style="width:30%">
-                            <input type="text" class='textfield' placeholder="일" required>
+                        <td colspan="3">
+                            <input type="number" class='textfield' placeholder="일" required min='1' max='31' value=1>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="10">
-                            <input type="email" class='textfield' name="email" placeholder="본인확인 이메일 (선택)">
+                            <input type="email" class='textfield' name="email" placeholder="본인확인 이메일 (선택)" autocomplete="none">
                         </td>
                     </tr>
                 </table>
