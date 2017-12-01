@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheets/sign_up_interest.css">
+    <title>7-Talk</title>
+</head>
+
+<body>
+    <div class='main_container'>
+        <img src="images/7-talk_logo.png" alt="7-talk_logo.png" style='margin-top:10%;' id='logo'>
+        <div class="top_group">
+            <input type="button" value="< prev" onclick="window.history.back();">
+            <span style="margin:0;">심리검사</span>
+            <input type="button" value="next >" onclick="location.href='sign_up_interest6.html';">
+        </div>
+        <div class="question-form" style="width:90%; height:93%;">
+            <textarea id="question-1"placeholder="심리검사 질문 2"></textarea>
+            <input type="button" value="1번" class='btn_question' style="  width: 100px; padding:0;"  onclick="changeSelect(this);">
+            <input type="button" value="2번" class='btn_question' style="  width: 100px; padding:0;"  onclick="changeSelect(this);">
+            <input type="button" value="3번" class='btn_question' style="  width: 100px; padding:0;"  onclick="changeSelect(this);">
+            <input type="button" value="4번" class='btn_question' style="  width: 100px; padding:0;"  onclick="changeSelect(this);">
+
+        </div>
+        
+        <footer>
+            <p> &#169; Junk Food</p>
+        </footer>
+    </div>
+    <script src="javascripts/question.js"></script>
+</body>
+
+</html>
