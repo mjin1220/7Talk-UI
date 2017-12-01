@@ -1,6 +1,12 @@
 *:focus {
   outline: none;
 }
+table, tr, th, td{
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin:0;
+  padding:0;
+}
 
 body {
   font-family: Arial, ‘Sans-serif’;
@@ -174,18 +180,42 @@ td textarea {
 }
 
 .info_contents table {
-  border-collapse: collapse;
   padding: 0;
   width: 100%;
   table-layout: fixed;
 }
 
-.info_contents table input {
+.info_contents table .textfield  {
   border-width: 0.5px;
   border-style: solid;
   border-color: #ddd;
-  width: 93%;
+  width: 100%;
   height: 40px;
-  padding-left: 15px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.btn_sex {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #ddd;
+  background-color: white;
+  font-size: 14px;
+  color: rgb(131, 131, 131);
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+#date_select{
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #ddd;
+  background-color: white;
+  font-size: 14px;
+  color: rgb(131, 131, 131);
+  text-align: center;
+  width: 100%;
+  height: 43px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
