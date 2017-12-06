@@ -1,48 +1,7 @@
-body {
-  font-family: Arial, ‘Sans-serif’;
-  background: black;
-}
-
-.maching-page {
-  width: 360px;
-  height: 600px;
-  background: #f2e7f1;
-  margin: auto;
-  margin-top: 4%;
-}
-
-.top_menu{
-  width: 360px;
-  height: 100px;
-  background: #6f00ff;
-  vertical-align: middle;
-}
-
-.top_menu ul li{
-  float: left;
-  width:33%;
-}
-
-.top_menu ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #6f00ff;
-  width:100%;
-}
-
-.top_menu img {
-  width: 70px;
-  margin:auto;
-}
-
-.submenu img {
-  width: 70px;
-  margin:auto;
-  margin-left: 40px;
-}
 .notunder {
+  margin: 0;
   height: 30%;
+  text-align: center;
   text-decoration: none !important;
 }
+

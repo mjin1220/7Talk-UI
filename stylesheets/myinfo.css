@@ -1,56 +1,17 @@
-body {
-  font-family: Arial, ‘Sans-serif’;
-  background: black;
-}
-
-.maching-page {
-  width: 360px;
-  height: 600px;
-  background: #f2e7f1;
-  margin: auto;
-  margin-top: 4%;
-}
-
-.form .menu-form {
-  width: 360px;
-  height: 100px;
-  background: #6f00ff;
-}
-
-.form .interest-form {
+.interest-form {
   width: 360px;
   height: 400px;
   background: #f2e7f1;
 }
 
-.form #myInfo {
-  width: 70px;
-  margin-left: 40px;
-}
 
-.form #heart {
-  width: 70px;
-  margin-left: 40px;
-}
-
-.form #post {
-  width: 70px;
-  margin-left: 40px;
-  margin-right: 20px;
-}
-
-.form img {
-  float: left;
-  margin-top: 15px;
-}
-
-.form .message-1 {
+.message-1 {
   width: 200px;
   font-size: 30px;
   margin-left: 100px;
 }
 
-.form .message {
+.message {
   width: 80px;
   margin: 20px 0 0 0;
   margin-left: 10px;
@@ -62,7 +23,7 @@ body {
   font-size: 12px;
 }
 
-.form input {
+.input {
   width: 95%;
   margin-left: 10px;
 }
